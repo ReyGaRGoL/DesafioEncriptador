@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main class="presentacion">
+
+        <section class="seccion__entrada">
+
+            <textarea class="area__entrada" name="area" id="areaEntrada" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="parte__inferior">
+                <div class="mensaje">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="">
+                    <p class="texto__gris">Solo letras mayusculas y
+                        sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <button class="boton__encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton__desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="seccion__salida__vacia" id="seccionVacia">
+            
+            
+            <img class="presentacion__imagen" src="./assets/Muñeco.png" alt="Foto del Muñeco"> 
+            <div class="division__mensaje">
+                <p class="mensaje__texto__superior">
+                    Ningun mensaje fue <br>
+                    encontrado
+                </p>
+
+                <p class="mensaje__texto__inferior">
+                    Ingresa el texto que desees encriptar o <br>
+                    desencriptar
+                </p>
+            </div>
+            
+
+            
+
+           
+        </section>
+
+        <section class="seccion__salida__llena" id="seccionLlena">
+            
+
+            <textarea class="area__salida" name="area" id="areaSalida" readonly></textarea>
+            
+            
+
+            <button class="boton__copiar" id="botonCopiar" onclick="copiar()" >Copiar</button>
+
+           
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p class="texto__gris">Desarrollado por Camilo Sotelo Maya</p>
+    </footer>
+
+    
+    <script src="funcionalidades.js"></script>
+</body>
+
+</html>
